@@ -1,0 +1,34 @@
+--- 
+Integrity_Rules: 
+  - 
+    method: exclude
+    path: USA/economy/crisis/2008_mortgage
+    reason: "avoiding potential conflict-of-interest of employees who work/worked for AIG"
+    voter_lists: 
+      - AGI_Employees
+  - 
+    method: exclude
+    path: USA/government/policy
+    reason: "voting on government policy is going to be limited to specific people"
+  - 
+    method: include
+    path: USA/government/policy/environment
+    reason: "only EPA employees can vote on government environmental policy problems"
+    voter_lists: 
+      - EPA_Employees
+voter_lists: 
+  - 
+    description: "Identified employees and former employees of AIG"
+    name: AIG_Employees
+    voter_IDs: 
+      - 12513421409213
+      - 13524134341313
+      - 32154341243143
+      - 54153441134133
+  - 
+    description: "Identified employees and former employees of the EPA"
+    name: EPA_Employees
+    voter_IDS: 
+      - 45323134134132
+      - 43254343209123
+      - 38513419309843
